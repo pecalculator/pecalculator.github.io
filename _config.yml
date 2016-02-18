@@ -8,3 +8,4 @@ sass:
   sass_dir: _sass
 exclude:
   - CNAME
+  - README.md
