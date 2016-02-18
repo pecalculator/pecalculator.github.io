@@ -2,10 +2,13 @@
 layout: default
 title: PECalculator Blog
 ---
-	<h1>{{ page.title }}</h1>
-	<ul class="posts">
-
-	  {% for post in site.posts %}
-	    <li><span>{{ post.date | date_to_string }}</span> » <a href="{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a></li>
-	  {% endfor %}
-	</ul>
+<h3>Thoughts on diligence, private markets, investing, and other randomness</h3>
+<hr>
+<ul class="clean-list">
+  {% for post in site.posts %}
+    <li>
+      <h4><a href="{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a></h4>
+      <p>{{post.excerpt}}</p>
+    </li>
+  {% endfor %}
+</ul>

@@ -1,5 +1,9 @@
 ---
 ---
+@import 'colors'
+body
+  color: $color-black
+  font-family: 'Roboto', sans-serif
 .kza-logo
   background-image: url(/img/kitlogo.png)
   background-repeat: no-repeat
@@ -8,7 +12,23 @@
   min-height: 100px
   height: inherit
 .buffer
-  margin: 25px
+  margin: 25px 0px
+.text-brand
+  color: $color-primary-0
+.pec-topnav
+  .menu-item
+    margin: 15px 0px
+.pec-mainmenu
+  .menu-item
+    margin: 30px 0px
+.border-bottom
+  border-bottom: 1px solid $color-grey
+.disabled
+  color: $color-grey
+.clean-list
+  margin: 0px
+  padding: 0px
+  list-style-type: none
 
 @media only screen and (min-width: 768px)
   .kza-logo
